@@ -37,11 +37,11 @@ for i in range(len(candidate)):
 		otooley += 1
 
 # compares the number of votes each candidate recevied, to see who the winner is
-if (khan > correy) and (khan > li) and (khan > otooley):
+if khan > max(correy, li, otooley):
 	winner = "Khan"
-elif (correy > khan) and (correy > li) and (correy > otooley):
+elif correy > max(khan, li, otooley):
 	winner = "Correy"
-elif (li > correy) and (li > khan) and (li > otooley):
+elif li > max(correy, khan, otooley):
 	winner = "Li"
 else:
 	winner = "O'Tooley"
